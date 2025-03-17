@@ -91,8 +91,8 @@ module fir
     .sm_tdata(sm_tdata),
     .sm_tlast(sm_tlast)
     );
-    assign tap_WE = {3{we_tap}};
-    assign data_WE = {3{we_str}};
+    assign tap_WE = {4{we_tap}};
+    assign data_WE = {4{we_str}};
 
     FIR_CORE #(
     .pADDR_WIDTH(pADDR_WIDTH),

@@ -127,9 +127,9 @@ module AXI_INTERACE
     assign wdata_upd   = (conf_d_arrive) ? wdata : wdata_prev;
     assign araddr_upd  = (raddr_arrive)  ? araddr : araddr_prev;
     always @ (posedge clk) begin
-        awaddr_prev <= awaddr_prev;
-        wdata_prev  <= wdata_prev;
-        araddr_prev <= araddr_prev;
+        awaddr_prev <= awaddr_upd;
+        wdata_prev  <= wdata_upd;
+        araddr_prev <= araddr_upd;
     end
     
     // state machine for arrive condition
@@ -219,12 +219,13 @@ module AXI_INTERACE
         end else if (sm_tlast) begin
             nxt_state_running = done_and_idle;
         end else begin
-            nxt_state_running = 3'hx;
+            nxt_state_running = reset_and_idle;
         end
     end
     // see which path should tap ram be updated to
     assign din_tap = we_tap_from_in ? {29'b0, wdata_upd_from_in} : wdata_upd;
-    assign ain_tap = we_tap_from_in ? {pADDR_WIDTH{1'b0}} : araddr_upd;
+    assign ain_tap = we_tap_from_in ? {pADDR_WIDTH{1'b0}} : 
+                    ((rd_en_source && (~raddr_arrive)) ? tap_count : araddr_upd);
     
     
     always @ (posedge clk, negedge rst_n) begin
@@ -239,7 +240,7 @@ module AXI_INTERACE
 
     // handle read operation
     assign en_read_tap  = arready && arvalid;
-    assign arready      = (state_running >= wrote_tap);
+    assign arready      = (state_running > wrote_tap);
     assign rdata        = dout_tap;
 
     always @(posedge clk, negedge rst_n) begin
@@ -306,7 +307,7 @@ module AXI_INTERACE
     assign sm_tdata = core_result;
 
     // address handling of tap address
-    assign ain_tap = (rd_en_source && (~raddr_arrive)) ? tap_count : araddr_upd;
+    //assign ain_tap = (rd_en_source && (~raddr_arrive)) ? tap_count : araddr_upd;
     
     always @ (posedge clk_comp, negedge rst_n) begin
         if (rst_n == 1'b0) begin
