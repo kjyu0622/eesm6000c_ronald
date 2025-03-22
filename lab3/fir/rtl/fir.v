@@ -48,6 +48,8 @@ module fir
     wire rd_en_source;
     wire we_tap;
     wire we_str;
+    wire [3:0] tap_count;
+    wire [(pDATA_WIDTH-1):0] num_vld_ops;
     
 
     // write your code here!
@@ -72,10 +74,15 @@ module fir
     .core_result(core_result),
     .result_vld(rslt_vld),
     .sm_tready(sm_tready),
+    .upd_str_data(upd_str_data),
+    .i_tap_count(tap_count),
+    .num_vld_ops(num_vld_ops),
     .awready(awready),
     .wready(wready),
     .arready(arready),
+    .araddr(araddr),
     .rvalid(rvalid),
+    .rready(rready),
     .rdata(rdata),
     .ss_tready(ss_tready),
     .we_tap(we_tap),
@@ -107,7 +114,10 @@ module fir
     .data_str_vld(),
     .rd_en_source(rd_en_source),
     .core_result(core_result),
-    .result_vld(rslt_vld)
+    .result_vld(rslt_vld),
+    .upd_str_data(upd_str_data),
+    .tap_count(tap_count),
+    .num_vld_operations(num_vld_ops)
     );
 
 endmodule

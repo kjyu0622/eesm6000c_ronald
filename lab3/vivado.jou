@@ -2,8 +2,8 @@
 # Vivado v2022.1 (64-bit)
 # SW Build 3526262 on Mon Apr 18 15:47:01 MDT 2022
 # IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
-# Start of session at: Mon Mar 17 08:41:06 2025
-# Process ID: 60833
+# Start of session at: Sat Mar 22 10:30:57 2025
+# Process ID: 61344
 # Current directory: /home/ubuntu/Desktop/EESM6000C/eesm6000c_ronald/lab3
 # Command line: vivado
 # Log file: /home/ubuntu/Desktop/EESM6000C/eesm6000c_ronald/lab3/vivado.log
@@ -15,30 +15,304 @@ open_project /home/ubuntu/Desktop/EESM6000C/eesm6000c_ronald/lab3/lab3_fir_filte
 update_compile_order -fileset sources_1
 launch_simulation
 source fir_tb.tcl
+run 100 ns
+current_wave_config {Untitled 1}
+add_wave {{/fir_tb/data_RAM/CLK}} {{/fir_tb/data_RAM/WE}} {{/fir_tb/data_RAM/EN}} {{/fir_tb/data_RAM/Di}} {{/fir_tb/data_RAM/Do}} {{/fir_tb/data_RAM/A}} 
+current_wave_config {Untitled 1}
+add_wave {{/fir_tb/data_RAM/RAM}} 
+current_wave_config {Untitled 1}
+add_wave {{/fir_tb/fir_DUT/fir_core_inst/data_in_tap}} {{/fir_tb/fir_DUT/fir_core_inst/data_in_str}} 
+current_wave_config {Untitled 1}
+add_wave {{/fir_tb/fir_DUT/fir_core_inst/str_shift}} 
+relaunch_sim
+current_wave_config {Untitled 1}
+add_wave {{/fir_tb/fir_DUT/fir_core_inst/shift_upd}} 
+relaunch_sim
+current_wave_config {Untitled 1}
+add_wave {{/fir_tb/fir_DUT/fir_core_inst/clk_core}} 
+relaunch_sim
+relaunch_sim
+current_wave_config {Untitled 1}
+add_wave {{/fir_tb/fir_DUT/fir_core_inst/rd_en_source_1}} 
+current_wave_config {Untitled 1}
+add_wave {{/fir_tb/fir_DUT/fir_core_inst/rd_en_source_2}} 
+relaunch_sim
+current_wave_config {Untitled 1}
+add_wave {{/fir_tb/fir_DUT/axi_intf_inst/rd_en_fifo}} 
+relaunch_sim
+relaunch_sim
+relaunch_sim
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run all
+current_wave_config {Untitled 1}
+add_wave {{/fir_tb/tap_RAM/CLK}} {{/fir_tb/tap_RAM/WE}} {{/fir_tb/tap_RAM/EN}} {{/fir_tb/tap_RAM/Di}} {{/fir_tb/tap_RAM/Do}} {{/fir_tb/tap_RAM/A}} {{/fir_tb/tap_RAM/RAM}} 
+relaunch_sim
+relaunch_sim
+relaunch_sim
+current_wave_config {Untitled 1}
+add_wave {{/fir_tb/fir_DUT/axi_intf_inst/clk_comp}} 
+relaunch_sim
+current_wave_config {Untitled 1}
+add_wave {{/fir_tb/fir_DUT/axi_intf_inst/tap_count}} 
+relaunch_sim
+relaunch_sim
+update_compile_order -fileset sources_1
+relaunch_sim
+relaunch_sim
+update_compile_order -fileset sources_1
+current_wave_config {Untitled 1}
+add_wave {{/fir_tb/fir_DUT/axi_intf_inst/fifo_1/wrt_ptr}} 
+current_wave_config {Untitled 1}
+add_wave {{/fir_tb/fir_DUT/axi_intf_inst/fifo_1/rd_ptr}} 
+relaunch_sim
+relaunch_sim
+relaunch_sim
+current_wave_config {Untitled 1}
+add_wave {{/fir_tb/fir_DUT/axi_intf_inst/ss_tready}} 
+relaunch_sim
+relaunch_sim
+relaunch_sim
+current_wave_config {Untitled 1}
+add_wave {{/fir_tb/data_Do}} 
+relaunch_sim
+relaunch_sim
+run 100 ns
+run 100 ns
+relaunch_sim
+relaunch_sim
+update_compile_order -fileset sources_1
+relaunch_sim
+update_compile_order -fileset sources_1
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+current_wave_config {Untitled 1}
+add_wave {{/fir_tb/fir_DUT/fir_core_inst/mult_prod}} 
+current_wave_config {Untitled 1}
+add_wave {{/fir_tb/fir_DUT/fir_core_inst/adder_a}} 
+current_wave_config {Untitled 1}
+add_wave {{/fir_tb/fir_DUT/fir_core_inst/adder_b}} 
+current_wave_config {Untitled 1}
+add_wave {{/fir_tb/fir_DUT/fir_core_inst/sum}} 
+relaunch_sim
+relaunch_sim
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run all
+current_wave_config {Untitled 1}
+add_wave {{/fir_tb/fir_DUT/fir_core_inst/result_vld}} 
+current_wave_config {Untitled 1}
+add_wave {{/fir_tb/fir_DUT/fir_core_inst/core_result}} 
+relaunch_sim
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+relaunch_sim
+run 100 ns
+current_wave_config {Untitled 1}
+add_wave {{/fir_tb/fir_DUT/fir_core_inst/tap_count}} 
+relaunch_sim
+current_wave_config {Untitled 1}
+add_wave {{/fir_tb/fir_DUT/fir_core_inst/data_sel_str_pre}} 
+current_wave_config {Untitled 1}
+add_wave {{/fir_tb/fir_DUT/fir_core_inst/data_sel_str}} 
+relaunch_sim
+relaunch_sim
+current_wave_config {Untitled 1}
+add_wave {{/fir_tb/fir_DUT/fir_core_inst/core_cycle}} 
+relaunch_sim
+relaunch_sim
+run all
+relaunch_sim
+relaunch_sim
+run all
+run all
+relaunch_sim
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+current_wave_config {Untitled 1}
+add_wave {{/fir_tb/fir_DUT/fir_core_inst/upd_str_data}} 
+relaunch_sim
+current_wave_config {Untitled 1}
+add_wave {{/fir_tb/fir_DUT/fir_core_inst/m_tap}} {{/fir_tb/fir_DUT/fir_core_inst/m_data}} 
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+run 100 ns
+relaunch_sim
+run all
+relaunch_sim
+relaunch_sim
+current_wave_config {Untitled 1}
+add_wave {{/fir_tb/tap_RAM/RAM}} 
+relaunch_sim
+current_wave_config {Untitled 1}
+add_wave {{/fir_tb/fir_DUT/fir_core_inst/m_tap_tmp}} 
+relaunch_sim
+relaunch_sim
+run all
+current_wave_config {Untitled 1}
+add_wave {{/fir_tb/fir_DUT/axi_intf_inst/num_vld}} 
+current_wave_config {Untitled 1}
+add_wave {{/fir_tb/fir_DUT/axi_intf_inst/max_num}} 
+relaunch_sim
+run all
+current_wave_config {Untitled 1}
+add_wave {{/fir_tb/sm_tready}} 
+current_wave_config {Untitled 1}
+add_wave {{/fir_tb/sm_tvalid}} 
+relaunch_sim
+run all
+current_wave_config {Untitled 1}
+add_wave {{/fir_tb/fir_DUT/axi_intf_inst/nxt_state_running}} {{/fir_tb/fir_DUT/axi_intf_inst/nxt_state_arr}} {{/fir_tb/fir_DUT/axi_intf_inst/state_running}} {{/fir_tb/fir_DUT/axi_intf_inst/state_arr}} 
+relaunch_sim
+run 9000 ns
+run 9000 ns
+run 9000 ns
+run 9000 ns
+run 9000 ns
+run 9000 ns
+run 9000 ns
+run 9000 ns
+run 9000 ns
+run 9000 ns
+current_wave_config {Untitled 1}
+add_wave {{/fir_tb/fir_DUT/axi_intf_inst/ss_tlast}} 
+relaunch_sim
+run 90000 ns
+relaunch_sim
+run 90000 ns
+current_wave_config {Untitled 1}
+add_wave {{/fir_tb/fir_DUT/axi_intf_inst/ain_str}} 
+current_wave_config {Untitled 1}
+add_wave {{/fir_tb/fir_DUT/axi_intf_inst/ain_str_w}} 
+relaunch_sim
+run 90000 ns
+current_wave_config {Untitled 1}
+add_wave {{/fir_tb/tap_RAM/WE}} {{/fir_tb/tap_RAM/EN}} {{/fir_tb/tap_RAM/Di}} {{/fir_tb/tap_RAM/Do}} {{/fir_tb/tap_RAM/A}} 
+current_wave_config {Untitled 1}
+add_wave {{/fir_tb/fir_DUT/fir_core_inst/data_in_tap}} {{/fir_tb/fir_DUT/fir_core_inst/data_in_str}} 
+current_wave_config {Untitled 1}
+add_wave {{/fir_tb/fir_DUT/fir_core_inst/core_result}} 
+current_wave_config {Untitled 1}
+add_wave {{/fir_tb/fir_DUT/fir_core_inst/adder_a}} {{/fir_tb/fir_DUT/fir_core_inst/adder_b}} 
+current_wave_config {Untitled 1}
+add_wave {{/fir_tb/tap_RAM/A}} 
+current_wave_config {Untitled 1}
+add_wave {{/fir_tb/data_A}} 
+current_wave_config {Untitled 1}
+add_wave {{/fir_tb/tap_A}} 
+report_drivers {/fir_tb/tap_A}
 current_wave_config {Untitled 1}
 add_wave {{/fir_tb/fir_DUT/axi_intf_inst/we_tap_from_in}} 
 relaunch_sim
+run 90000 ns
 relaunch_sim
+run 90000 ns
+current_wave_config {Untitled 1}
+add_wave {{/fir_tb/fir_DUT/axi_intf_inst/rd_en_source}} 
 relaunch_sim
+run 90000 ns
+current_wave_config {Untitled 1}
+add_wave {{/fir_tb/fir_DUT/axi_intf_inst/raddr_arrive}} 
 relaunch_sim
+current_wave_config {Untitled 1}
+add_wave {{/fir_tb/arready}} 
 relaunch_sim
+run 90000 ns
+current_wave_config {Untitled 1}
+add_wave {{/fir_tb/fir_DUT/axi_intf_inst/num_writes}} 
 relaunch_sim
+run 90000 ns
+current_wave_config {Untitled 1}
+add_wave {{/fir_tb/fir_DUT/axi_intf_inst/araddr}} 
 relaunch_sim
+run 90000 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+current_wave_config {Untitled 1}
+add_wave {{/fir_tb/rdata}} 
 relaunch_sim
-add_bp {/home/ubuntu/Desktop/EESM6000C/eesm6000c_ronald/lab3/lab3_fir_filter/lab3_fir_filter.srcs/sources_1/new/axi_interface.v} 198
-remove_bps -file {/home/ubuntu/Desktop/EESM6000C/eesm6000c_ronald/lab3/lab3_fir_filter/lab3_fir_filter.srcs/sources_1/new/axi_interface.v} -line 198
+run 90000 ns
 relaunch_sim
-clear
-clc
+run 90000 ns
 relaunch_sim
+run 90000 ns
+current_wave_config {Untitled 1}
+add_wave {{/fir_tb/fir_DUT/axi_intf_inst/run_status}} {{/fir_tb/fir_DUT/axi_intf_inst/nxt_run_status}} 
 relaunch_sim
+run 90000 ns
 relaunch_sim
+run 90000 ns
 relaunch_sim
-relaunch_sim
-relaunch_sim
-current_wave_config {Untitled 2}
-add_wave {{/fir_tb/fir_DUT/axi_intf_inst}} 
-relaunch_sim
-relaunch_sim
-relaunch_sim
+run 90000 ns
+launch_runs synth_1
+wait_on_run synth_1
+launch_simulation -mode post-synthesis -type functional
+source fir_tb.tcl
+launch_simulation -mode post-synthesis -type timing
+source fir_tb.tcl
+run 90000 ns
+run 900 ns
+run 900 ns
+run 900 ns
+run all
+current_sim simulation_1
 close_sim
+launch_simulation
+source fir_tb.tcl
+relaunch_sim
+run 90000 ns
+current_sim simulation_3
+close_sim
+close_sim
+relaunch_sim
+relaunch_sim
+run all
+relaunch_sim
+run all
+relaunch_sim
+run all

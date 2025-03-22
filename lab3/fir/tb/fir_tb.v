@@ -270,6 +270,7 @@ module fir_tb
             while (!rvalid) @(posedge axis_clk);
             if( (rdata & mask) != (exp_data & mask)) begin
                 $display("ERROR: exp = %d, rdata = %d", exp_data, rdata);
+                $display("expected rdata & mask is %h and exp_data & mask is %h", (rdata & mask), (exp_data & mask));
                 error_coef <= 1;
             end else begin
                 $display("OK: exp = %d, rdata = %d", exp_data, rdata);

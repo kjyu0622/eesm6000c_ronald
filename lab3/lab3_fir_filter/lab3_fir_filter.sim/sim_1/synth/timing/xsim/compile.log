@@ -1,0 +1,11 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ubuntu/Desktop/EESM6000C/eesm6000c_ronald/lab3/lab3_fir_filter/lab3_fir_filter.sim/sim_1/synth/timing/xsim/fir_tb_time_synth.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AXI_INTERACE
+INFO: [VRFC 10-311] analyzing module FIFO_WRAPPER_SYNC
+INFO: [VRFC 10-311] analyzing module FIR_CORE
+INFO: [VRFC 10-311] analyzing module fir
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ubuntu/Desktop/EESM6000C/eesm6000c_ronald/lab3/bram/bram11.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bram11
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ubuntu/Desktop/EESM6000C/eesm6000c_ronald/lab3/fir/tb/fir_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fir_tb
+WARNING: [VRFC 10-3380] identifier 'error_coef' is used before its declaration [/home/ubuntu/Desktop/EESM6000C/eesm6000c_ronald/lab3/fir/tb/fir_tb.v:189]
