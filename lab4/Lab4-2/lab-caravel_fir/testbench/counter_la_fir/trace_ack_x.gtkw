@@ -1,0 +1,40 @@
+[*]
+[*] GTKWave Analyzer v3.3.103 (w)1999-2019 BSI
+[*] Mon May  5 12:46:34 2025
+[*]
+[dumpfile] "/home/ubuntu/Desktop/EESM6000C/eesm6000c_ronald/lab4/Lab4-2/lab-caravel_fir/testbench/counter_la_fir/counter_la_fir.vcd"
+[dumpfile_mtime] "Mon May  5 12:19:48 2025"
+[dumpfile_size] 36622387
+[savefile] "/home/ubuntu/Desktop/EESM6000C/eesm6000c_ronald/lab4/Lab4-2/lab-caravel_fir/testbench/counter_la_fir/trace_ack_x.gtkw"
+[timestart] 0
+[size] 1000 600
+[pos] 125 173
+*-24.000000 12580000 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] counter_la_fir_tb.
+[treeopen] counter_la_fir_tb.uut.
+[treeopen] counter_la_fir_tb.uut.padframe.
+[treeopen] counter_la_fir_tb.uut.soc.
+[treeopen] counter_la_fir_tb.uut.soc.core.
+[sst_width] 233
+[signals_width] 270
+[sst_expanded] 1
+[sst_vpaned_height] 216
+@28
+counter_la_fir_tb.uut.soc.core.mgmtsoc_ibus_ibus_ack
+counter_la_fir_tb.uut.soc.core.shared_ack
+counter_la_fir_tb.uut.soc.core.grant[1:0]
+counter_la_fir_tb.uut.soc.core.done
+counter_la_fir_tb.uut.soc.core.mgmtsoc_vexriscv_debug_bus_ack
+counter_la_fir_tb.uut.soc.core.dff_bus_ack
+counter_la_fir_tb.uut.soc.core.dff2_bus_ack
+counter_la_fir_tb.uut.soc.core.mgmtsoc_litespimmap_bus_ack
+counter_la_fir_tb.uut.soc.core.mprj_ack
+counter_la_fir_tb.uut.soc.core.hk_ack
+counter_la_fir_tb.uut.soc.core.mgmtsoc_wishbone_ack
+@200
+-trace mprj_ack
+@28
+counter_la_fir_tb.uut.soc.core.mprj_ack_i
+counter_la_fir_tb.uut.mprj_ack_i_core
+[pattern_trace] 1
+[pattern_trace] 0

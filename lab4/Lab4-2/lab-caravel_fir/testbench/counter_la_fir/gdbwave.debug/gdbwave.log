@@ -1,0 +1,17 @@
+INFO   : Reading configuration parameters...
+INFO   : cpuClk:counter_la_tb.uut.soc.core.VexRiscv.clk
+INFO   : retiredPc:counter_la_tb.uut.soc.core.VexRiscv.lastStagePc [31:0]
+INFO   : retiredPcValid:counter_la_tb.uut.soc.core.VexRiscv.lastStageIsValid
+INFO   : regFileWriteValid:counter_la_tb.uut.soc.core.VexRiscv.lastStageRegFileWrite_valid
+INFO   : regFileWriteAddr:counter_la_tb.uut.soc.core.VexRiscv.lastStageRegFileWrite_payload_address [4:0]
+INFO   : regFileWriteData:counter_la_tb.uut.soc.core.VexRiscv.lastStageRegFileWrite_payload_data [31:0]
+INFO   : memCmdValid:counter_la_tb.uut.soc.core.VexRiscv.dBus_cmd_valid
+INFO   : memCmdReady:counter_la_tb.uut.soc.core.VexRiscv.dBus_cmd_ready
+INFO   : memCmdAddr:counter_la_tb.uut.soc.core.VexRiscv.dBus_cmd_payload_address [31:0]
+INFO   : memCmdSize:counter_la_tb.uut.soc.core.VexRiscv.dBus_cmd_payload_size [1:0]
+INFO   : memCmdWr:counter_la_tb.uut.soc.core.VexRiscv.dBus_cmd_payload_wr
+INFO   : memCmdWrData:counter_la_tb.uut.soc.core.VexRiscv.dBus_cmd_payload_data [31:0]
+INFO   : memRspValid:counter_la_tb.uut.soc.core.VexRiscv.dBus_rsp_ready
+INFO   : memRspRdData:counter_la_tb.uut.soc.core.VexRiscv.dBus_rsp_data [31:0]
+INFO   : memInitFile:../gdb.debug/progmem.bin
+INFO   : memInitStartAddr:0
